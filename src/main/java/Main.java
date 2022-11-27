@@ -14,6 +14,7 @@ public class Main {
                 System.out.println(i);
             }
             System.out.println(" Factorial " + number + "! = " + mult);
+        System.out.println("Merging to main branch");
         }
     }
 
