@@ -14,7 +14,7 @@ compareBoolean();
 isPositiveOrNegative();
 isPositOrNeg();
 printString("Artur",4);
-isleapYear(2020);
+isleapYear(2022);
     }
     static void printThreeWords(){
         System.out.println("Orange");
