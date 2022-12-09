@@ -22,10 +22,11 @@ isleapYear(2020);
         System.out.println("Apple");
     }
     static void checkSumSign(int a, int b){
+        int sum = a + b;
         if ((a+b) >= 0){
-            System.out.println("Number positive");
+            System.out.println(sum + " - Number positive");
         }else {
-            System.out.println("Number negative");
+            System.out.println(sum +  " - Number negative");
         }
     }
     static void printColor() {
@@ -84,11 +85,13 @@ if(value <= 0 ){
         }
     }
     static boolean isleapYear(int year){
-        if (year%4== 0 && year% 100 != 0 || year%400 == 0) {
+        if (year%4 == 0 && year% 100 != 0 || year%400 == 0) {
             System.out.println(year + " - Leap year");
+            System.out.println(true);
             return true;
         }else {
             System.out.println(year + " - not tall year");
+            System.out.println(false);
             return false;
         }
     }
