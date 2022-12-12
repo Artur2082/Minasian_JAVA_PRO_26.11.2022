@@ -10,8 +10,8 @@ public class MainBarriers {
         participants[1] = cat;
         participants[2] = robot;
 
-        Treadmill treadmill = new Treadmill(400);
-        Wall wall = new Wall(3);
+        Treadmill treadmill = new Treadmill(800);
+        Wall wall = new Wall(1);
         Obstacles[] obstacles = new Obstacles[2];
         obstacles[0] = treadmill;
         obstacles[1] = wall;

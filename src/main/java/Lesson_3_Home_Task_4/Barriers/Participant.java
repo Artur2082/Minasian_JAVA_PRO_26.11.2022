@@ -6,10 +6,11 @@ public abstract class Participant {
     protected int maxHeight;
     protected int countObstacle;
 
-     int getCountObstacle() {
+    int getCountObstacle() {
         return countObstacle;
     }
-     void run(){
+
+    void run(){
          System.out.println("Participant " + name + " - run on treadmill given distance;");
      }
     void jump(){
