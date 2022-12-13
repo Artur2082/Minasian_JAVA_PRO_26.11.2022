@@ -17,8 +17,8 @@ public class GuessAWord {
         String word = scanner.next().toLowerCase();
         int hintCharacter = 2;
         while (!randomWord.equals(word)) {
-            StringBuilder stringBuilder = new StringBuilder(randomWord.substring(0, hintCharacter));
-            System.out.println(stringBuilder.append("###############"));
+            StringBuilder stringBuilder = new StringBuilder("###############");
+            System.out.println(stringBuilder.replace(0, hintCharacter, randomWord.substring(0, hintCharacter)));
             System.out.println(" Try again ! ");
             word = scanner.next().toLowerCase();
             if (hintCharacter + 2 <= randomWord.length()) {
