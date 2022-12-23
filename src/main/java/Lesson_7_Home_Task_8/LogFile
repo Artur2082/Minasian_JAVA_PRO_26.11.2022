@@ -1,0 +1,8 @@
+2022-12-23T11:03:04.083 : LEVEL DEBUG : First log sample 
+2022-12-23T11:03:04.128 : LEVEL INFO : First log sample 
+2022-12-23T11:03:04.129 : LEVEL DEBUG : Second log sample 
+2022-12-23T11:03:04.130 : LEVEL INFO : Second log sample 
+2022-12-23T11:03:04.130 : LEVEL DEBUG : Third log sample 
+2022-12-23T11:03:04.130 : LEVEL INFO : Third log sample 
+2022-12-23T11:03:04.131 : LEVEL DEBUG : Fourth log sample 
+2022-12-23T11:03:04.131 : LEVEL INFO : Fourth log sample 

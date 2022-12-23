@@ -9,7 +9,6 @@ public class ArraySizeException extends RuntimeException {
 
     @Override
     public String getMessage() {
-
         return this.message;
     }
 }
