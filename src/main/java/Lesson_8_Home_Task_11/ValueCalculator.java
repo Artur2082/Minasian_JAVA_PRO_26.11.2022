@@ -6,7 +6,6 @@ public class ValueCalculator {
     public static void main(String[] args) throws InterruptedException {
         arrayMethod();
     }
-
     private static int sizeArray = 20000000;
     private static float[] array = new float[sizeArray];
     private static int halfArray = sizeArray / 2;

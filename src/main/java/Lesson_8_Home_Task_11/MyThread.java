@@ -11,7 +11,7 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println(" Running tread - " + nameArray);
+        System.out.println(" Running thread - " + nameArray);
         for (int j = 0; j < array.length; j++) {
             array[j] = (float) (array[j] * Math.sin(0.2f + j / 5) * Math.cos(0.2f + j / 5) * Math.cos(0.4f + j / 2));
         }
