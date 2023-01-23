@@ -16,7 +16,7 @@ public class MainOrder {
         coffeeOrderBoard.add(new Order(9,"Tony"));
         System.out.println("Printing all added orders :" + '\n' + queue);
         coffeeOrderBoard.deliver();
-        coffeeOrderBoard.deliverByNumber(3);
+        coffeeOrderBoard.deliverByNumber(3) ;
         coffeeOrderBoard.draw();
     }
 }

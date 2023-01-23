@@ -31,7 +31,7 @@ public class CoffeeOrderBoard {
 
     public void draw() {
         for (Order order : queue.values()) {
-            System.out.println(order.getNumberOrder() + " | " + order.getName());
+            System.out.println(order.getNumberOrder() + "|" + order.getName());
         }
     }
 }

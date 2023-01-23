@@ -13,7 +13,7 @@ public class Order implements Comparable<Order>{
     @Override
     public String toString() {
         return " Order {" +
-                "number = " + numberOrder +
+                " number = " + numberOrder +
                 ", name ='" + name + '\'' + '}' + '\n';
     }
 
