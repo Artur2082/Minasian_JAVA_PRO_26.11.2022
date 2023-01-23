@@ -1,7 +1,5 @@
 package Lesson_13_Home_Task_14;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainFile {
     public static void main(String[] args) {
