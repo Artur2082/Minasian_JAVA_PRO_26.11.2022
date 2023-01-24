@@ -1,7 +1,9 @@
 package Lesson_14_Home_Task_15;
 
 
-public class Order implements Comparable<Order>{
+import java.util.Objects;
+
+public class Order {
     private Integer numberOrder;
     private String name;
 
@@ -26,7 +28,15 @@ public class Order implements Comparable<Order>{
     }
 
     @Override
-    public int compareTo(Order o) {
-        return this.numberOrder - o.getNumberOrder();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Order order = (Order) o;
+        return numberOrder.equals(order.numberOrder) && name.equals(order.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numberOrder, name);
     }
 }

@@ -20,6 +20,7 @@ public class CoffeeOrderBoard {
     }
 
     public void deliverByNumber(Integer num) {
+        System.out.println("Reverse queue :" + '\n' + queue.descendingMap());
         if (queue.containsKey(num)) {
             Order order = queue.get(num);
             queue.remove(num);
@@ -31,7 +32,7 @@ public class CoffeeOrderBoard {
 
     public void draw() {
         for (Order order : queue.values()) {
-            System.out.println(order.getNumberOrder() + "|" + order.getName());
+            System.out.println(order.getNumberOrder() + " | " + order.getName());
         }
     }
 }
