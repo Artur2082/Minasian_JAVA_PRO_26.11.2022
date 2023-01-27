@@ -1,4 +1,4 @@
-package Lesson_14_Home_Task_15;
+package Lesson_15_Home_Task_15;
 
 import java.util.*;
 
@@ -14,9 +14,7 @@ public class CoffeeOrderBoard {
     }
 
     public void deliver() {
-        Order order = queue.get(queue.firstKey());
-        queue.remove(queue.firstKey());
-        System.out.println("First " + order);
+        System.out.println("First " + queue.remove(queue.firstKey()));
     }
 
     public void deliverByNumber(Integer num) {
