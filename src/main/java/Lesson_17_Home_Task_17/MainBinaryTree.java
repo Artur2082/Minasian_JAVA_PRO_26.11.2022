@@ -11,7 +11,7 @@ public class MainBinaryTree {
         tree.add(root, 4);
         tree.add(root, 15);
         tree.add(root, 1);
-        System.out.println("Traversing tree in order :" );
+        System.out.println("Traversing tree in order :");
         tree.traverseInOrder(root);
     }
 }

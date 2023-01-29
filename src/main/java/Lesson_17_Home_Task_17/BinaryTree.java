@@ -2,7 +2,7 @@ package Lesson_17_Home_Task_17;
 
 public class BinaryTree {
     public void add(Node node, int value) {
-        if (value < node.value ) {
+        if (value < node.value) {
             if (node.left != null) {
                 add(node.left, value);
             } else {
