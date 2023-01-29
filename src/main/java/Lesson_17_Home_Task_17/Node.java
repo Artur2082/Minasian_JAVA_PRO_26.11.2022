@@ -1,6 +1,6 @@
 package Lesson_17_Home_Task_17;
 
-public class Node {
+public class Node{
     int value;
     Node left;
     Node right;
