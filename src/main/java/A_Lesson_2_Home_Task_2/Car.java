@@ -1,4 +1,4 @@
-package Lesson_2_Home_Task_2;
+package A_Lesson_2_Home_Task_2;
 
 public class Car {
     public static void main(String[] args) {
