@@ -1,4 +1,4 @@
-package Working_With_Interfase_and_Abstract_Class_HT4.Barriers;
+package C_Working_With_Interfase_and_Abstract_Class_HT4.Barriers;
 
 public class Treadmill implements Obstacles {
     private int distance;

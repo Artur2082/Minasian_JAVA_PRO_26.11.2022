@@ -1,4 +1,4 @@
-package Working_With_Simple_Methods_HT5;
+package D_Working_With_Simple_Methods_HT5;
 
 public class HomeWorkApp {
     public static int getRandomInRange(int begin, int end) {
