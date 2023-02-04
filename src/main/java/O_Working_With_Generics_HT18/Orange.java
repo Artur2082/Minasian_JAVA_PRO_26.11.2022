@@ -4,7 +4,7 @@ public class Orange extends Fruit {
     float weight = 1.5F;
 
     public Orange() {
-        super.weight = this.weight;
+        super.fruitWeight = this.weight;
     }
 
     @Override

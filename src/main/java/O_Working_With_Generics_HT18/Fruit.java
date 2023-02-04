@@ -1,13 +1,13 @@
 package O_Working_With_Generics_HT18;
 
 public class Fruit {
-    float weight;
+    float fruitWeight;
 
     public Fruit() {
-        this.weight = weight;
+        this.fruitWeight = fruitWeight;
     }
 
-    public float getWeight() {
-        return weight;
+    public float getFruitWeight() {
+        return fruitWeight;
     }
 }
