@@ -1,14 +1,15 @@
 package P_Working_With_Stream_HT_19;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Product {
     private String type;
     private int price;
     private boolean discount;
-    private Date date;
+    private LocalDate date;
 
-    public Product(String type, int price, boolean discount, Date date) {
+    public Product(String type, int price, boolean discount, LocalDate date) {
         this.type = type;
         this.price = price;
         this.discount = discount;
@@ -31,7 +32,7 @@ public class Product {
         return discount;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 

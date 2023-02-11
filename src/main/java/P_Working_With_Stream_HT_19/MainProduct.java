@@ -1,16 +1,17 @@
 package P_Working_With_Stream_HT_19;
 
+import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class MainProduct {
     public static void main(String[] args) throws Exception {
-        Product product1 = new Product("Book", 300, true, new Date(1672915985000L));
-        Product product2 = new Product("Book", 70, false, new Date(1675853585000L));
-        Product product3 = new Product("Journal", 230, true, new Date(1661079185000L));
-        Product product4 = new Product("Book", 400, true, new Date(1654339985000L));
-        Product product5 = new Product("Book", 60, false, new Date(1675728000000L));
-        Product product6 = new Product("Journal", 300, true, new Date(1661079185000L));
+        Product product1 = new Product("Book", 300, true, LocalDate.of(2023,1,5));
+        Product product2 = new Product("Book", 70, false, LocalDate.of(2023,2,8));
+        Product product3 = new Product("Journal", 230, true, LocalDate.of(2022, 8, 21));
+        Product product4 = new Product("Book", 400, true, LocalDate.of(2022, 6,4));
+        Product product5 = new Product("Book", 60, false, LocalDate.of(2023,2,7));
+        Product product6 = new Product("Journal", 300, true, LocalDate.of(2022,8,21));
 
         List<Product> productList = new ArrayList<>();
         productList.add(product1);
@@ -37,7 +38,7 @@ public class MainProduct {
 
         System.out.println("Books sold in 2023 with price under 75 :");
         List<Product> productList4 = productList.stream().filter(e -> e.getType().equals("Book")
-                && e.getDate().after(new Date(1672531200000L))
+                && e.getDate().isAfter(LocalDate.of(2023,1,1))
                 && e.getPrice() <= 75).collect(Collectors.toList());
         System.out.println(productList4);
         int sum = productList4.stream().mapToInt(Product::getPrice).sum();
