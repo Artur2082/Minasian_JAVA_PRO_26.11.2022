@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class MainLogger {
     public static void main(String[] args) throws IOException {
-        FileLoggerConfiguration fileLoggerConfiguration = new FileLoggerConfiguration("C:\\Users\\Артур\\IdeaProjects\\Java_Pro\\Java_Pro_26.11.2022\\src\\main\\java\\Lesson_7_Home_Task_8\\LogFile", LoggingLevel.DEBUG, 1000);
+        FileLoggerConfiguration fileLoggerConfiguration = new FileLoggerConfiguration("C:\\Users\\Артур\\IdeaProjects\\Java_Pro\\Java_Pro_26.11.2022\\src\\main\\java\\G_Working_With_IO_HT8\\LogFile", LoggingLevel.DEBUG, 1000);
         FileLogger.setUpLogger(fileLoggerConfiguration);
         try {
             FileLogger.myLog(" First log sample \n");
