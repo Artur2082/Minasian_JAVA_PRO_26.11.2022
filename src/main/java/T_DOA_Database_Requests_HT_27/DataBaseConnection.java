@@ -18,7 +18,7 @@ public class DataBaseConnection {
             String url = "jdbc:mysql://localhost:3306/dbtest";
             connection = DriverManager.getConnection(url, userName, password);
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+           e.printStackTrace();
         }
         return connection;
     }

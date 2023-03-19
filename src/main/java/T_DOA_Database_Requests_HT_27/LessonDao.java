@@ -92,7 +92,7 @@ public class LessonDao {
         LessonDao lessonDao = new LessonDao(baseConnection);
         lessonDao.insertLesson("drawing",  Date.valueOf(LocalDate.of(2022, 12, 25)),6);
         System.out.println(lessonDao.showLesson());
-        lessonDao.deleteById(26);
+        lessonDao.deleteById(27);
         System.out.println(lessonDao.showLesson());
         System.out.println(lessonDao.findById(3));
     }
