@@ -8,7 +8,7 @@ import java.util.List;
 
 public class MainConnection {
     public static void main(String[] args) throws SQLException {
-        DataBaseConnection dbc = new DataBaseConnection();
+        DBConnection dbc = new DBConnection();
         try {
             Statement statement = dbc.getConnection().createStatement();
             try (ResultSet resultSet = statement.executeQuery("SELECT * FROM dbtest.homework ")) {
@@ -24,10 +24,10 @@ public class MainConnection {
         }
     }
 
-    private static List<Homework> showHomework(ResultSet rs) throws SQLException {
-        List<Homework> homework = new ArrayList<>();
+    private static List<HW_Class> showHomework(ResultSet rs) throws SQLException {
+        List<HW_Class> homework = new ArrayList<>();
         while (rs.next()) {
-            Homework hw = new Homework();
+            HW_Class hw = new HW_Class();
             hw.setId(rs.getInt("id"));
             hw.setDescription(rs.getString("description"));
             hw.setName(rs.getString("name"));
@@ -36,10 +36,10 @@ public class MainConnection {
         return homework;
     }
 
-    private static List<Lesson> showLesson(ResultSet rs) throws SQLException {
-        List<Lesson> lessonList = new ArrayList<>();
+    private static List<Lesson_Class> showLesson(ResultSet rs) throws SQLException {
+        List<Lesson_Class> lessonList = new ArrayList<>();
         while (rs.next()) {
-            Lesson lesson = new Lesson();
+            Lesson_Class lesson = new Lesson_Class();
             lesson.setId(rs.getInt("id"));
             lesson.setName(rs.getString("name"));
             lesson.setUpdatedAt(rs.getDate("updatedAt").toLocalDate());
@@ -48,5 +48,7 @@ public class MainConnection {
         }
         return lessonList;
     }
+
+
 
 }

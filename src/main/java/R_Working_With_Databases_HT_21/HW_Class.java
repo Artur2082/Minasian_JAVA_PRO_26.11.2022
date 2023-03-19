@@ -1,11 +1,11 @@
 package R_Working_With_Databases_HT_21;
 
-public class Homework {
+public class HW_Class {
     private int id;
     private String description;
     private String name;
 
-    public Homework() {
+    public HW_Class() {
     }
 
     @Override

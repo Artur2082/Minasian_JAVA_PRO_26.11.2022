@@ -2,13 +2,13 @@ package R_Working_With_Databases_HT_21;
 
 import java.time.LocalDate;
 
-public class Lesson {
+public class Lesson_Class {
     private int id;
     private String name;
     private LocalDate updatedAt;
     private int homeworkId;
 
-    public Lesson() {
+    public Lesson_Class() {
     }
 
     public void setId(int id) {

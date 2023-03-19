@@ -1,10 +1,11 @@
-package R_Working_With_Databases_HT_21;
+package T_DOA_Database_Requests_HT_27;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DataBaseConnection {
+
     private Connection connection;
 
     public DataBaseConnection() {
@@ -16,7 +17,6 @@ public class DataBaseConnection {
             String userName = "root";
             String url = "jdbc:mysql://localhost:3306/dbtest";
             connection = DriverManager.getConnection(url, userName, password);
-            System.out.println("Connected !");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
