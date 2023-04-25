@@ -1,28 +1,35 @@
 
-19:23:20.099 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 1, name ='Artur'}
+19:37:20.905 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 1, name ='Artur'}
  
-19:23:20.107 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 7, name ='Olga'}
+19:37:20.914 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 7, name ='Olga'}
  
-19:23:20.107 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 2, name ='Denis'}
+19:37:20.915 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 2, name ='Denis'}
  
-19:23:20.107 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 6, name ='John'}
+19:37:20.915 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 6, name ='John'}
  
-19:23:20.107 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 3, name ='Ann'}
+19:37:20.915 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 3, name ='Ann'}
  
-19:23:20.107 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 9, name ='Tony'}
+19:37:20.915 [main] INFO  V.CoffeeOrderBoard -- Adding order to queue :  Order { number = 9, name ='Tony'}
  
-19:23:20.107 [main] INFO  V.CoffeeOrderBoard -- Method deliver first order :  Order { number = 1, name ='Artur'}
+19:37:20.915 [main] INFO  V.CoffeeOrderBoard -- Method deliver first order :  Order { number = 1, name ='Artur'}
  
-19:23:20.108 [main] INFO  V.CoffeeOrderBoard -- Reverse queue :
+19:37:20.916 [main] INFO  V.CoffeeOrderBoard -- Reverse queue :
 {9= Order { number = 9, name ='Tony'}
 , 7= Order { number = 7, name ='Olga'}
 , 6= Order { number = 6, name ='John'}
 , 3= Order { number = 3, name ='Ann'}
 , 2= Order { number = 2, name ='Denis'}
 }
-19:23:20.108 [main] INFO  V.CoffeeOrderBoard -- Result of method - deliver by number 3, Order { number = 3, name ='Ann'}
+19:37:20.917 [main] INFO  V.CoffeeOrderBoard -- Result of method - deliver by number 3, Order { number = 3, name ='Ann'}
  
-19:23:20.108 [main] INFO  V.CoffeeOrderBoard --  2 | Denis 
-19:23:20.108 [main] INFO  V.CoffeeOrderBoard --  6 | John 
-19:23:20.108 [main] INFO  V.CoffeeOrderBoard --  7 | Olga 
-19:23:20.108 [main] INFO  V.CoffeeOrderBoard --  9 | Tony 
+19:37:20.917 [main] INFO  V.CoffeeOrderBoard -- Reverse queue :
+{9= Order { number = 9, name ='Tony'}
+, 7= Order { number = 7, name ='Olga'}
+, 6= Order { number = 6, name ='John'}
+, 2= Order { number = 2, name ='Denis'}
+}
+19:37:20.917 [main] ERROR V.CoffeeOrderBoard -- Number of order can't be null : [java.util.TreeMap.getEntry(TreeMap.java:347), java.util.TreeMap.containsKey(TreeMap.java:232), V_Working_With_Logs.CoffeeOrderBoard.deliverByNumber(CoffeeOrderBoard.java:51), V_Working_With_Logs.CoffeeOrderBoard.main(CoffeeOrderBoard.java:23)]
+19:37:20.917 [main] INFO  V.CoffeeOrderBoard --  2 | Denis 
+19:37:20.918 [main] INFO  V.CoffeeOrderBoard --  6 | John 
+19:37:20.918 [main] INFO  V.CoffeeOrderBoard --  7 | Olga 
+19:37:20.918 [main] INFO  V.CoffeeOrderBoard --  9 | Tony 

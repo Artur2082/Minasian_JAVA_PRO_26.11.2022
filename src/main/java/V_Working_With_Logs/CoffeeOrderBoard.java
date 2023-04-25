@@ -20,6 +20,7 @@ public class CoffeeOrderBoard {
         coffeeOrderBoard.add(new Order(9, "Tony"));
         coffeeOrderBoard.deliver();
         coffeeOrderBoard.deliverByNumber(3);
+        coffeeOrderBoard.deliverByNumber(null);
         coffeeOrderBoard.draw();
     }
 
