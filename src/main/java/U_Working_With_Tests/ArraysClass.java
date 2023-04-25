@@ -1,11 +1,13 @@
 package U_Working_With_Tests;
 
+import java.util.Arrays;
+
 public class ArraysClass {
     public static void main(String[] args) {
         int[] arr = {1, 2, 4, 4, 2, 3, 1, 7};
         int[] arr1 = null;
         int[] arr2 = {1, 4, 1, 4, 1, 4};
-        int[] arr3 = {2, 3, 5};
+        int[] arr3 = {2, 3, 5, 9, 20};
         int[] arr5 = {1, 2, 4};
         System.out.println(java.util.Arrays.toString(checkArray(arr)));
         System.out.println(java.util.Arrays.toString(checkArray(arr1)));
@@ -13,7 +15,6 @@ public class ArraysClass {
         System.out.println(checkArray2(arr2));
         System.out.println(checkArray2(arr5));
         System.out.println(java.util.Arrays.toString(checkArray(arr3)));
-
     }
 
     public static int[] checkArray(int[] array) {
