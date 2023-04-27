@@ -7,7 +7,7 @@
         </encoder>
     </appender>
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>C:\Users\Артур\IdeaProjects\Java_Pro\Java_Pro_26.11.2022\logs\logs1.log</file>
+        <file>logs\logs1.log</file>
         <append>true</append>
         <immediateFlush>true</immediateFlush>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
