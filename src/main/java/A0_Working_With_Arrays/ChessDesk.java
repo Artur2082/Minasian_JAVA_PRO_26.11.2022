@@ -8,7 +8,6 @@ public class ChessDesk {
         String a = "B";
         String b = "W";
         for (int i = 0; i < matrix.length; i++) {
-            matrix[i] = new String[8];
             for (int j = 0; j < matrix.length; j++) {
                 if ((i + j) % 2 == 0) {
                     matrix[i][j] = a;
